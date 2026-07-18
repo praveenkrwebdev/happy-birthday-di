@@ -9,7 +9,7 @@ html,body{
 }
 
 body{
-    font-family:'Inter',sans-serif;
+    font-family:'Lato',sans-serif;
     background:#00000f;
     color:#fff;
     position:relative;
@@ -163,16 +163,17 @@ main{
 /* TYPOGRAPHY */
 .small-title{
     display:block;
-    font-family:'Inter',sans-serif;
-    font-size:13px;
-    letter-spacing:9px;
+    font-family:'Lato',sans-serif;
+    font-weight:300;
+    font-size:12px;
+    letter-spacing:10px;
     text-transform:uppercase;
-    color:rgba(255,255,255,.6);
-    margin-bottom:28px;
+    color:rgba(255,255,255,.55);
+    margin-bottom:30px;
 }
 
 h1,h2,h3{
-    font-family:'Cormorant Garamond',serif;
+    font-family:'Playfair Display',Georgia,serif;
     font-weight:500;
     line-height:1.12;
 }
@@ -188,18 +189,20 @@ h3{
 
 p{
     margin-top:20px;
-    font-size:clamp(16px,2vw,22px);
-    color:rgba(255,255,255,.78);
-    letter-spacing:1.5px;
-    line-height:1.85;
+    font-family:'Lato',sans-serif;
+    font-weight:300;
+    font-size:clamp(16px,2vw,21px);
+    color:rgba(255,255,255,.75);
+    letter-spacing:2px;
+    line-height:1.9;
 }
 
 /* PER-LETTER ANIMATION */
 .letter{
     display:inline-block;
     opacity:0;
-    transform:translateY(24px);
-    animation:letterIn .65s cubic-bezier(.22,1,.36,1) forwards;
+    transform:translateY(22px);
+    animation:letterIn 1s cubic-bezier(.22,1,.36,1) forwards;
     will-change:transform,opacity;
 }
 
@@ -213,6 +216,8 @@ p{
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     background-clip:text;
+    padding-bottom:.18em;
+    margin-bottom:-.18em;
 }
 
 .birthday{
@@ -275,7 +280,7 @@ p{
 
     p{font-size:13px;padding:0 14px;margin-top:10px;line-height:1.65;}
 
-    .small-title{font-size:9px;letter-spacing:4px;margin-bottom:14px;}
+    .small-title{font-size:9px;letter-spacing:5px;margin-bottom:14px;}
 
     .heart{width:46px;height:46px;margin-top:26px;}
     .heart::before,.heart::after{width:46px;height:46px;}
