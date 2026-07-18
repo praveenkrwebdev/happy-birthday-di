@@ -157,7 +157,7 @@ function animateText(el, baseDelay = 0){
                 const span = document.createElement("span");
                 span.className = "letter";
                 span.textContent = ch === " " ? "\u00A0" : ch;
-                span.style.animationDelay = (baseDelay + charIndex * 52) + "ms";
+                span.style.animationDelay = (baseDelay + charIndex * 90) + "ms";
                 el.appendChild(span);
                 charIndex++;
             });
@@ -179,10 +179,10 @@ function showScene(index){
     const scene = scenes[index];
     scene.classList.add("active");
 
-    let delay = 180;
+    let delay = 300;
     scene.querySelectorAll("h1,h2,h3,p,.small-title").forEach(el=>{
         const count = animateText(el, delay);
-        delay += count * 52 + 280;
+        delay += count * 90 + 400;
     });
 }
 
